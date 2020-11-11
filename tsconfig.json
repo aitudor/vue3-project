@@ -17,7 +17,8 @@
     "paths": {
       "@/*": [
         "src/*"
-      ]
+      ],
+      "vue3-lib":["../vue3-lib/index"]
     },
     "lib": [
       "esnext",
