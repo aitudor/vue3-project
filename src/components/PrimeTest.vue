@@ -1,13 +1,13 @@
 <template>
   <div class="hello">
-      {{ msg }}
+      {{ message }}
   </div>
-  <TestButton :msg='msg'></TestButton>
+  <TestButton :msg="message" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import TestButton from 'vue3-lib/src/components/testbutton/index';
+import { TestButton } from 'vue3-lib/src/components/testbutton/index';
 
 export default defineComponent({
   name: 'PrimeTest',
@@ -15,9 +15,9 @@ export default defineComponent({
       TestButton
   },
   data() {
-      const msg = "Hello Prime";
+      const message = "Hello Prime";
       return {
-          msg
+          message
       }
   }
 });

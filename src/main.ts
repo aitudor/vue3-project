@@ -5,4 +5,7 @@ import VueLib from 'vue3-lib/src/index';
 
 
 
-createApp(App).use(router).use(VueLib).mount('#app')
+const app = createApp(App);
+app.use(router);
+app.use(VueLib);
+app.mount('#app');
